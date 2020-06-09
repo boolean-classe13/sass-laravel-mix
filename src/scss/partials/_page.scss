@@ -1,0 +1,33 @@
+main {
+    height: 100vh;
+    @include my-flex(row, center, center);
+
+    #central {
+        width: 900px;
+        text-align: center;
+
+        .logo  {
+            margin-bottom: $margin-base;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        .bottoni {
+            @include my-flex(row, space-around, center);
+            width: 80%;
+            margin: ($margin-base * 2) auto;
+        }
+
+        .links {
+            color: $light_font_color;
+
+            img {
+                height: 15px;
+                margin-right: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
